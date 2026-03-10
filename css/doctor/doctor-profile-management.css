@@ -1,0 +1,145 @@
+﻿/* Dashboard Container */
+.dashboard-container {
+    margin-left: 250px; /* Match the width of the sidebar */
+    padding: 20px;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    background-color: #89A8B2;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .dashboard-header h1 {
+        font-size: 28px;
+        margin: 0;
+        color: #333;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .dashboard-header p {
+        margin: 5px 0 0;
+        font-size: 16px;
+        color: #E5E1DA;
+    }
+
+.date-label {
+    color: #333;
+    font-size: 28px;
+}
+
+/* Profile Form */
+.profile-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+    .profile-form h2 {
+        color: #89A8B2;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-group .form-control {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #B3C8CF;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #E5E1DA;
+        color: #333;
+    }
+
+        .form-group .form-control:focus {
+            outline: none;
+            border-color: #89A8B2;
+        }
+
+/* Save Button */
+.save-btn {
+    background-color: #89A8B2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+    .save-btn:hover {
+        background-color: #B3C8CF;
+    }
+
+/* Current Profile Information */
+.current-profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+    .current-profile h2 {
+        color: #89A8B2;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+.profile-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+    .profile-details p strong {
+        color: #333;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date-label {
+        margin-top: 10px;
+    }
+}
+
+:root {
+    --animate-duration: 2s;
+    --animate-delay: 1s;
+}

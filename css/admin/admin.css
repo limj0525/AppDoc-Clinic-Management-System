@@ -1,0 +1,274 @@
+﻿/* ==================== ADMIN DASHBOARD STYLES ==================== */
+
+/* Container for dashboard content */
+.dashboard-container {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+/* Header section of the admin dashboard */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1F0E8;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    height: 78px;
+    width: 1509px;
+}
+
+/* General styling for headings */
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: left;
+}
+
+/* Styling for the welcome message */
+.welcome-text {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Date text styling */
+.date {
+    text-align: right;
+    float: right;
+    font-size: 16px;
+    color: #333;
+}
+
+/* ==================== TABLE STYLES ==================== */
+
+/* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header (th) and data cell (td) styling */
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Table header background and text styling */
+th {
+    background-color: #89A8B2;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Table row styling */
+td {
+    border-bottom: 1px solid #B3C8CF;
+}
+
+/* Alternate row background color for better readability */
+tr:nth-child(even) {
+    background-color: #E5E1DA;
+}
+
+/* ==================== BUTTON STYLES ==================== */
+
+/* General button styling */
+button {
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* ==================== ADMIN MANAGE DOCTOR/PATIENT STYLES ==================== */
+
+/* Styling for the "Add New" button */
+.add-new-btn {
+    background-color: #89A8B2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+}
+
+    /* Hover effect for "Add New" button */
+    .add-new-btn:hover {
+        background-color: #B3C8CF;
+        transform: scale(1.05);
+    }
+
+/* ==================== ADMIN ADD DOCTOR/PATIENT FORM STYLES ==================== */
+
+/* Styling for the form table */
+.form-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+    /* Table cell styling inside forms */
+    .form-table td {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Labels inside form */
+    .form-table label {
+        font-weight: bold;
+        display: block;
+    }
+
+/* Input fields inside form */
+.input-field {
+    padding: 8px;
+}
+
+/* Submit and Back buttons */
+.submit-btn, .back-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #89A8B2;
+}
+
+/* ==================== LOGIN FORM STYLES ==================== */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('../../image/clinic_login.jpg') no-repeat fixed center;
+    background-size: 1920px 1080px;
+    }
+
+.login-container {
+    background: #E5E1DA;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #89A8B2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+p {
+    margin-top: 15px;
+}
+
+/* ==================== REGISTER FORM STYLES ==================== */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../image/clinic_login.jpg') no-repeat fixed center;
+    background-size: 1920px 1080px;
+    }
+
+.register-container {
+    background: #E5E1DA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #89A8B2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+    p a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        p a:hover {
+            text-decoration: underline;
+        }

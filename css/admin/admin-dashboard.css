@@ -1,0 +1,287 @@
+﻿/* ===== Admin Dashboard Styles ===== */
+/* Reusing Doctor Dashboard Design System */
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+    .sidebar h2 {
+        color: #89A8B2;
+        margin-bottom: 25px;
+        font-size: 22px;
+        align-items: center;
+        gap: 10px;
+        text-align:center;
+    }
+
+    .sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 15px;
+        color: #333;
+        text-decoration: none;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        font-size: 16px;
+    }
+
+        .sidebar a:hover {
+            background-color: #E5E1DA;
+            color: #333;
+        }
+
+        .sidebar a.active {
+            background-color: #89A8B2;
+            color: white;
+        }
+
+        .sidebar a i {
+            width: 20px;
+            text-align: center;
+        }
+
+/* Dashboard Container */
+.dashboard-container {
+    margin-left: 250px;
+    padding: 30px;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    background-color: #89A8B2;
+    padding: 20px 25px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    .dashboard-header h1 {
+        color: white;
+        margin: 0;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+.date-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Summary Cards */
+.summary-cards {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card h3 {
+        color: #89A8B2;
+        margin: 0 0 15px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card p {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+    }
+
+/* Appointments Section */
+.appointments-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+    .appointments-section h2 {
+        color: #89A8B2;
+        margin-top: 0;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .appointments-section p {
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.6;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+/* Grid View */
+.appointment-grid {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+    .appointment-grid th {
+        background-color: #89A8B2;
+        color: white;
+        padding: 15px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+        .appointment-grid th i {
+            margin-right: 8px;
+        }
+
+    .appointment-grid td {
+        padding: 15px;
+        border-bottom: 1px solid #E5E1DA;
+        color: #333;
+    }
+
+    .appointment-grid tr:nth-child(even) {
+        background-color: #F8F9FA;
+    }
+
+    .appointment-grid tr:hover {
+        background-color: #F1F3F5;
+    }
+
+/* Hyperlinks */
+a {
+    color: #89A8B2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+    a:hover {
+        color: #6c8b95;
+        text-decoration: underline;
+    }
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .dashboard-container {
+        margin-left: 220px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .dashboard-container {
+        margin-left: 0;
+    }
+
+    .summary-cards {
+        flex-direction: column;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard-container {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .appointment-grid th,
+    .appointment-grid td {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Animation Durations */
+:root {
+    --animate-duration: 0.6s;
+    --animate-delay: 0.2s;
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+}

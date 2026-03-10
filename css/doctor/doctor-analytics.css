@@ -1,0 +1,209 @@
+﻿/* Dashboard Container */
+.dashboard-container {
+    margin-left: 250px; /* Match the width of the sidebar */
+    padding: 20px;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    background-color: #89A8B2;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .dashboard-header h1 {
+        font-size: 28px;
+        margin: 0;
+        color: #333;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .dashboard-header p {
+        margin: 5px 0 0;
+        font-size: 16px;
+        color: #E5E1DA;
+    }
+
+.date-label {
+    color: #333;
+    font-size: 28px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .filters label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .filters .filter-dropdown, .filters .search-btn {
+        height: 40px; /* Consistent height */
+        padding: 8px 12px;
+        border: 1px solid #B3C8CF;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .filters .search-btn {
+        background-color: #89A8B2;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .filters .search-btn:hover {
+            background-color: #B3C8CF;
+        }
+
+/* Charts Section */
+.charts-section {
+    display: flex;
+    gap: 20px; /* Space between charts */
+    margin-bottom: 30px;
+}
+
+.chart-container {
+    flex: 1; /* Each chart takes equal width */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+    .chart-container h2 {
+        color: #89A8B2;
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* Chart Canvas */
+    .chart-container canvas {
+        max-width: 100%;
+        height: auto !important; /* Ensure the chart is responsive */
+        margin: 0 auto; /* Center the chart */
+    }
+
+/* Chart Legend */
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+    .chart-legend .legend-item {
+        display: flex;
+        align-items: center;
+        margin: 5px 10px;
+    }
+
+    .chart-legend .legend-color {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    .chart-legend .legend-label {
+        font-size: 14px;
+        color: #333;
+    }
+
+/* Reports Section */
+.reports-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .reports-section h2 {
+        color: #89A8B2;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+.reports-grid {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+    .reports-grid th, .reports-grid td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #E5E1DA;
+    }
+
+    .reports-grid th {
+        background-color: #89A8B2;
+        color: white;
+        font-weight: bold;
+    }
+
+    .reports-grid tr:nth-child(even) {
+        background-color: #F1F0E8;
+    }
+
+    .reports-grid tr:hover {
+        background-color: #E5E1DA;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date-label {
+        margin-top: 10px;
+    }
+
+    .charts-section {
+        flex-direction: column;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .filters .filter-dropdown, .filters .search-btn {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+}
+
+:root {
+    --animate-duration: 2s;
+    --animate-delay: 1s;
+}

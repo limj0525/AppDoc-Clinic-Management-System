@@ -1,0 +1,305 @@
+﻿/* /css/admin/admin-manage-doctor.css */
+/* ===== DOCTOR MANAGEMENT STYLES ===== */
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+    .sidebar h2 {
+        color: #89A8B2;
+        margin-bottom: 25px;
+        font-size: 22px;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .sidebar a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 15px;
+        color: #333;
+        text-decoration: none;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        font-size: 16px;
+    }
+
+        .sidebar a:hover {
+            background-color: #E5E1DA;
+            color: #333;
+        }
+
+        .sidebar a.active {
+            background-color: #89A8B2;
+            color: white;
+        }
+
+        .sidebar a i {
+            width: 20px;
+            text-align: center;
+        }
+/* Main Container */
+.dashboard-container {
+    margin-left: 250px;
+    padding: 30px;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+    .header h2 {
+        color: #89A8B2;
+        margin: 0;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+/* Add New Button */
+.add-new-btn {
+    background-color: #89A8B2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    .add-new-btn:hover {
+        background-color: #6c8b95;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+/* Table Container */
+.table-container {
+    width: 100%; /* Make the container take the full available width */
+    max-width: 100%;
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    overflow-x: hidden;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+/* Doctors Table */
+.doctor-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+    .doctor-table th {
+        background-color: #89A8B2;
+        color: white;
+        padding: 15px;
+        text-align: left;
+        font-weight: 600;
+        position: sticky;
+        top: 0;
+    }
+
+    .doctor-table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #E5E1DA;
+        color: #333;
+        vertical-align: middle;
+        word-wrap: break-word;
+    }
+
+    .doctor-table tr:nth-child(even) {
+        background-color: #F8F9FA;
+    }
+
+    .doctor-table tr:hover {
+        background-color: #F1F3F5;
+    }
+
+    .doctor-table th:nth-child(1),
+    .doctor-table td:nth-child(1) {
+        width: 5%;
+    }
+
+    .doctor-table th:nth-child(3),
+    .doctor-table td:nth-child(3) {
+        width: 10%;
+    }
+    .doctor-table th:nth-child(5),
+    .doctor-table td:nth-child(5) {
+        width: 5%;
+    }
+    .doctor-table th:nth-child(6),
+    .doctor-table td:nth-child(6) {
+        width: 15%;
+    }
+
+    .doctor-table th:nth-child(7),
+    .doctor-table td:nth-child(7) {
+        width: 8%;
+    }
+
+    .doctor-table th:nth-child(8),
+    .doctor-table td:nth-child(8) {
+        width: 10%;
+    }
+
+/* Action Buttons */
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+}
+
+.edit-btn {
+    background-color: #FFC107;
+    color: #333;
+}
+
+    .edit-btn:hover {
+        background-color: #E0A800;
+    }
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+    .delete-btn:hover {
+        background-color: #d32f2f;
+    }
+
+/* Icons in Table */
+.doctor-table th i {
+    margin-right: 8px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .table-container {
+        overflow-x: auto;
+    }
+
+    .doctor-table {
+        min-width: 1000px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .add-new-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.new-doctor-row {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/*Search Bar*/
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.search-box {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    background-color: #89A8B2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .search-btn:hover {
+        background-color: #6c8b95;
+    }
+
+/*Reset Button*/
+.reset-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+    .reset-btn:hover {
+        background-color: #5a6268;
+    }
+
+.filter-dropdown {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}

@@ -1,0 +1,298 @@
+﻿/* Dashboard Container */
+.dashboard-container {
+    margin-left: 250px; /* Match the width of the sidebar */
+    padding: 20px;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    background-color: #89A8B2;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .dashboard-header h1 {
+        font-size: 28px;
+        margin: 0;
+        color: #333;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .dashboard-header p {
+        margin: 5px 0 0;
+        font-size: 16px;
+        color: #E5E1DA;
+    }
+
+.date-label {
+    color: #333;
+    font-size: 28px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input, .filter-dropdown, .search-btn, .reset-btn {
+    height: 40px; /* Consistent height */
+    padding: 8px 12px;
+    border: 1px solid #B3C8CF;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-btn, .reset-btn {
+    background-color: #89A8B2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .search-btn:hover, .reset-btn:hover {
+        background-color: #B3C8CF;
+    }
+
+/* Patient Section */
+.patient-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.patient-grid {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+    .patient-grid th, .patient-grid td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #E5E1DA;
+    }
+
+    .patient-grid th {
+        background-color: #89A8B2;
+        color: white;
+        font-weight: bold;
+    }
+
+    .patient-grid tr:nth-child(even) {
+        background-color: #F1F0E8;
+    }
+
+    .patient-grid tr:hover {
+        background-color: #E5E1DA;
+    }
+
+/* Action Buttons */
+.action-btn {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+}
+
+.view-btn {
+    background-color: #89A8B2;
+    color: white;
+}
+
+    .view-btn:hover {
+        background-color: #B3C8CF;
+    }
+
+.notes-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+    .notes-btn:hover {
+        background-color: #45a049;
+    }
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close:hover {
+        color: #333;
+    }
+
+/* Loading Spinner */
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #89A8B2;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .form-group .notes-input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #B3C8CF;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #E5E1DA;
+        color: #333;
+    }
+
+        .form-group .notes-input:focus {
+            outline: none;
+            border-color: #89A8B2;
+        }
+
+/* Save Button */
+.save-btn {
+    background-color: #89A8B2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+    .save-btn:hover {
+        background-color: #B3C8CF;
+    }
+
+/* Export Button */
+.export-btn {
+    background-color: #FFA500; /* Orange */
+    color: white;
+}
+
+    .export-btn:hover {
+        background-color: #FF8C00; /* Darker Orange */
+    }
+
+/* Export Modal */
+#exportModal .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#exportModal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    #exportModal .close:hover {
+        color: #333;
+    }
+
+/* Analytics Section */
+.analytics-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.analytics-charts {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+    }
+
+    .search-input, .filter-dropdown, .search-btn, .reset-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .dashboard-container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+:root {
+    --animate-duration: 2s;
+    --animate-delay: 1s;
+}
